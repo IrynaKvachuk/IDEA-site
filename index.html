@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+    <meta charset="utf-8" content="Idea decors">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Comatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Idea</title>
+</Head>
+
+<body>
+    <div class="cursor"></div>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#">Idea</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#gallery-section">Gallery</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="site-title">
+            <div class="site-background">
+                <h1>IDEA</h1>
+                <h3>Ideal Decor. Engaging Art.</h3>
+            </div>
+        </div>
+
+        <section class="home" id="home">
+            <div class="blog">
+                <div class="container">
+                    <h2>Newest</h2>
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content">
+                            <img src="./assets/gallery-decor/decor-02.JPG" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Spring heart</h3>
+                                <h4>Magnet</h4>
+                                <p class="price">100&#8372;</p>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./assets/gallery-decor/decor-03.JPG" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Spring wheatear heart</h3>
+                                <h4>Magnet</h4>
+                                <p class="price">100&#8372;</p>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./assets/gallery-decor/decor-04.JPG" alt="post-2">
+                            <div class="blog-title">
+                                <h3>Spring box</h3>
+                                <h4>Magnet</h4>
+                                <p class="price">100&#8372;</p>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./assets/gallery-decor/decor-02.JPG" alt="post-3">
+                            <div class="blog-title">
+                                <h3>Spring heart</h3>
+                                <h4>Magnet</h4>
+                                <p class="price">100&#8372;</p>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./assets/gallery-decor/decor-03.JPG" alt="post-4">
+                            <div class="blog-title">
+                                <h3>Spring heart</h3>
+                                <h4>Magnet</h4>
+                                <p class="price">100&#8372;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="title">
+                <h2 class="about-header">All about</h2>
+                <h3>IDEA</h3>
+                <h4>Ideal Decor. Engaging Art.</h4>
+            </div>
+            <div class="container" id="about">
+                <div class="description">
+                    <p class="content">Is it hard for you to decide which present would be the best for your soulmate,
+                        friend, family member or colleague? Can't find interesting, creative gift? Or maybe you just
+                        hate to go shopping?</p>
+                    <p class="content">IDEA is area of creativity. Our main goal is to make your present beautiful and
+                        relevant. Here you can find different creative gifts for everyone. At first we will listen to
+                        your needs, and then we will offer you the best option and
+                        of course take into account all your wishes. And be sure, we'll do everything to make your
+                        shopping comfortable.</p>
+                </div>
+                <div class="description-lists">
+                    <h3>Our principles:</h3>
+                    <ul class="list-principles">
+                        <li>&#10003; quality</li>
+                        <li>&#10003; reliability</li>
+                        <li>&#10003; creativity</li>
+                        <li>&#10003; politeness</li>
+                        <li>&#10003; punctuality</li>
+                    </ul>
+                    <h3>Reasons to choose us:</h3>
+                    <ol class="list-reasons">
+                        <li>Help with finding the best present.</li>
+                        <li>Online shopping.</li>
+                        <li>We always follow your wishes and thoughts.</li>
+                        <li>Unique creative gifts.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery-section">
+            <h2>Gallery</h2>
+            <nav class="gallery-nav">
+                <button class="btn-gallery" onclick="putGalleryContent()">Decor</button>
+                <button class="btn-gallery" onclick="putGalleryContent()">Jewellery</button>
+                <button class="btn-gallery" onclick="putGalleryContent()">Pictures</button>
+                <button class="btn-gallery" onclick="putGalleryContent()">Cloth painting</button>
+            </nav>
+            <div class="container" id="gallery-container">
+                <center>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/decor-02.jpg" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/decor-02.jpg"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/decor-03.jpg" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/decor-03.jpg"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/decor-04.jpg" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/decor-04.jpg"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/decor-05.jpg" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/decor-05.jpg"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/decor-06.jpg" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/decor-06.jpg"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/wreath-01.JPG" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/wreath-01.JPG"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/wreath-02.JPG" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/wreath-02.JPG"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/wreath-03.JPG" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/wreath-03.JPG"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/wreath-04.JPG" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/wreath-04.JPG"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/wreath-05.JPG" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/wreath-05.JPG"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/wreath-06.JPG" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/wreath-06.JPG"></a>
+                    <a data-fancybox="decor" href="./assets/gallery-decor/wreath-07.JPG" data-caption="Pink heart"><img
+                            src="./assets/gallery-decor/wreath-07.JPG"></a>
+                </center>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="about-us">
+                <h2>About us</h2>
+                <p>IDEA is art space where you can find creative and beautiful gift for everyone. We're listening your
+                    needs and help you to get the best gift.</p>
+            </div>
+            <div class="contacts">
+                <h2>Our location</h2>
+                <p>1-а Kurhuzova St, Vyshhorod, Kyivs'ka oblast, 07301</p>
+                <h2>Contacts</h2>
+                <p>+380672204396</p>
+                <p>kvachukir@gmail.com</p>
+            </div>
+            <div class="instagram">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./assets/gallery-decor/decor-01.jpg" alt="insta1">
+                    <img src="./assets/gallery-decor/decor-02.jpg" alt="insta2">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/gallery-pictures/t-shirt-01.jpg" alt="insta3">
+                    <img src="./assets/gallery-pictures/picture-05.jpg" alt="insta4">
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow us</h2>
+                <p>Let us be social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4>2020 All rights reserved | made by Iryna Kvachuk</h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <script src="./js/jquery3.4.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+
+</html>

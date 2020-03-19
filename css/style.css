@@ -1,0 +1,564 @@
+@import url('../css/fonts.css');
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    cursor: none;
+    /* overflow: hidden; */
+}
+
+:root {
+    /*---------fonts---------------*/
+    --Aloja: 'Aloja', cursive;
+    --Abel: 'Abel', cursive;
+    --Dancing: 'Dancing', cursive;
+    --Anton: 'Anton', cursive;
+    --Quicksand: 'Quicksand', cursive;
+    /*---------colors---------------*/
+    --text-gray: rgba(0, 0, 0, .3);
+    --text-dark: rgba(0, 0, 0, .6);
+    --text-light: rgb(184, 142, 138);
+    --white: #f8f8f8;
+    --salmon: #FA8072;
+    --light-salamon: rgb(253, 191, 184);
+    --dark-salamon: rgb(197, 86, 74);
+    --salmon-transperent: rgba(250, 128, 114, 0.3);
+    --bg-color: rgb(22, 18, 18);
+    /*---------gradients---------------*/
+    --salmon-white: linear-gradient(to top, #ffffff 0%, rgb(211, 143, 135) 100%);
+    --white-salmon: linear-gradient(to top, #FA8072 0%, #ffffff 70%, #ffffff 100%);
+}
+
+
+/*-----------------Global-Classes----------------------*/
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: var(--text-gray);
+    cursor: none;
+}
+
+a img {
+    height: 25%;
+    width: 25%;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: var(--Aloja);
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: var(--Anton);
+    font-size: 3rem;
+    color: var(--dark-salamon);
+}
+
+h3 {
+    font-family: var(--Anton);
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+h4 {
+    font-family: var(--Anton);
+    font-size: .8rem;
+    color: var(--text-gray);
+}
+
+button.btn {
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Quicksand);
+    cursor: pointer;
+    background: var(--heaven);
+}
+
+span {
+    font-family: var(--Quicksand);
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+p {
+    font-family: var(--Quicksand);
+    color: var(--light-salamon);
+}
+
+.icon {
+    width: 3vw;
+}
+
+.content {
+    color: var(--text-gray);
+}
+
+li {
+    z-index: 2;
+}
+
+button {
+    z-index: 2;
+}
+
+.owl-nav {
+    cursor: none;
+}
+/*-----------------Global-Classes----------------------*/
+
+
+/*-----------------Nav-Bar----------------------*/
+
+.nav {
+    background-color: var(--white);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    border-bottom: 3px solid var(--salmon);
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--salmon);
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items li {
+    padding: .5rem;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Quicksand);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: var(--white);
+} 
+
+.nav .nav-brand a {
+    font-size: 1.8rem;
+    padding: 1.2rem 0;
+    display: block;
+    font-family: var(--Aloja);
+    color: var(--dark-salamon);
+}
+
+.nav .social {
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+}
+
+.nav .social i {
+    padding: .2rem;
+}
+
+.nav .social i:hover {
+    color: var(--dark-salamon);
+}
+
+
+/*-----------------Nav-Bar----------------------*/
+
+
+/*-----------------Main-Content----------------------*/
+
+main .site-title {
+    background: url(../assets/images/marble-01.jpg);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid var(--salmon);
+}
+
+main .site-title .site-background {
+    margin: auto 30%;
+    padding: 6rem;
+    text-align: center;
+    color: var(--dark-salamon);
+    background: white;
+    border: 3px solid var(--dark-salamon);
+}
+
+main .site-title .site-background:hover {
+    background-color: var(--light-salamon);
+    color: var(--white);
+    border-color: var(--white);
+}
+
+main,
+.site-title h1,
+h3 {
+    margin: .3rem;
+}
+
+main .site-title h3 {
+    color: var(--text-light);
+}
+
+main .site-title h1:hover {
+    color: var(--dark-salamon);
+}
+
+
+main .site-title h3:hover {
+    color: var(--dark-salamon);
+}
+
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--dark-salamon);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all .3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 1;
+    backdrop-filter: grayscale();
+}
+
+.link-grow {
+    transform: scale(2);
+    background: var(--dark-salamon);
+}
+
+.hovered-link {
+    color: var(--white);
+}
+
+.front-cover img {
+    position: relative;
+}
+
+/*-----------------Home----------------------*/
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background: var(--white);
+    border-bottom: 3px solid var(--salmon);
+    padding-top: 10%;
+}
+
+main .blog {
+    background: url(../assets/images/marble-splash-01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 65vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+.home .container h2 {
+    position: absolute;
+    left: 45%;
+}
+
+main .blog .blog-post {
+    padding-top: 8rem;
+}
+
+main .blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .3);
+}
+
+main .blog-content .blog-title {
+    padding: .3rem 0;
+    font-size: 1.2rem;
+}
+
+main .blog-content .blog-title p {
+    color: black;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    background: var(--text-light);
+    opacity: 70%;
+    font-size: 1.5rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: var(--light-salamon);
+    opacity: 70%;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    outline: none;
+}
+
+
+/*-----------------Home----------------------*/
+
+
+/*-----------------About----------------------*/
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background: var(--salmon-white); */
+    background: url(../assets/images/salmon-palm-tree.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 20rem;
+}
+
+.about .title {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+
+.about h3 {
+    font-size: 2rem;
+}
+
+.about .container {
+    width: 85%;
+    display: flex;
+    flex-direction: line;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--salmon-transperent);
+    border-radius: 20px;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.about .container .description {
+    width: 60%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.about .container .description p:first-child {
+    color: var(--text-dark);
+    margin-bottom: 40px;
+}
+
+.about .container .description-lists {
+    width: 30%;
+    color: var(--text-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.about .container .description-lists ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.about .container .description-lists h3 {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.about .container .description-lists ol {
+    list-style-type: square;
+}
+
+
+/*-----------------About----------------------*/
+
+
+/*-----------------Gallery----------------------*/
+
+.gallery-section {
+    position: relative;
+    padding: 10% 0;
+    background: var(--white-salmon);
+}
+
+.gallery-section h2 {
+    text-align: center;
+}
+
+.gallery-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 1%;
+}
+
+.btn-gallery {
+    background: transparent;
+    border: none;
+    padding: 15px;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-gallery:hover {
+    color: var(--white);
+}
+
+.gallery-section .container a img {
+    transition: all .5s ease;
+}
+
+.gallery-section .container a img:hover {
+    transform: scale(1.1);
+}
+
+
+/*-----------------Gallery----------------------*/
+
+
+/*-----------------Main-Content----------------------*/
+
+
+/*-----------------Footer----------------------*/
+
+footer.footer {
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-left: .7rem;
+}
+
+footer.footer .instagram div>img {
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i {
+    font-size: 150%;
+    color: var(--white);
+    padding: .8rem;
+}
+
+footer.footer .follow div i:hover {
+    color: var(--salmon);
+}
+
+footer.footer .rights {
+    justify-content: center;
+    font-family: var(--Quicksand);
+}
+
+footer.footer .rights h4 {
+    color: var(--white);
+    letter-spacing: .1rem;
+    font-weight: lighter;
+}
+
+footer.footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span {
+    color: var(--salmon);
+}
+
+footer.footer .move-up span:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+/*-----------------Footer----------------------*/
+
+
+/*-----------------Viewport less then or equal to 750px----------------------*/
+
+@media screen and (max-width: 750px) {
+    .nav .nav-menu,
+    .nav .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+
+/*-----------------Viewport less then or equal to 750px----------------------*/
